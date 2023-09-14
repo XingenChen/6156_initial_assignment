@@ -11,9 +11,9 @@ students_resource = StudentsResource()
 
 
 @app.get("/")
-async def root(name: str):
+async def root():
     # return {"message": "Hello World"}
-    return {"message": f"Hello {name}"}
+    return {"message": "Hello World"}
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
